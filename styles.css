@@ -1,3 +1,13 @@
+.index-background {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.index-background img {
+  width: 100vw;
+}
+
 /*HEADER*/
 
 .header {
@@ -11,16 +21,17 @@
 #lena-abraham {
   font-family: 'Germania One', cursive;
   font-weight: 900;
-  font-size: 40px;
+  font-size: 50px;
   /*border: 1px solid black;*/
   margin-left: 40px;
   margin-right: 60px;
+  cursor:url(images/cursors/knife.png), auto;
 }
 
 .header-item {
   font-family: 'Germania One', cursive;
   font-weight: 900;
-  font-size: 20px;
+  font-size: 35px;
   color: gray;
   margin-left: 30px;
 }
@@ -39,7 +50,7 @@
 
 .photo:hover {
   z-index: 5;
-  box-shadow: 0px 0px 2px 2px #b7b7b7;
+  box-shadow: 0px 0px 2px 2px #474747;
 }
 
 .photo-row {
@@ -80,4 +91,28 @@
   align-self: center;
   height: 96%;
   top: 2%;
+}
+
+/*CONTACT*/
+
+.hamburger-phone {
+  text-align: center;
+}
+
+.contact {
+  /*border: 1px solid black;*/
+  width: 380px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons {
+  cursor:url(images/cursors/knife.png), auto;
+  font-size: 100px !important;
+}
+
+.icons:hover {
+  color: gray;
 }
