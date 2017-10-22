@@ -28,6 +28,15 @@
   cursor:url(images/cursors/knife.png), auto;
 }
 
+.titles {
+  position: fixed;
+  font-family: 'Germania One', cursive;
+  font-size: 18px;
+  top: 73px;
+  left: 40px;
+  color: #6d6d6d;
+}
+
 .header-item {
   font-family: 'Germania One', cursive;
   font-weight: 900;
@@ -91,6 +100,14 @@
   align-self: center;
   height: 96%;
   top: 2%;
+}
+
+/*VIDEOS*/
+
+.videos {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /*CONTACT*/
