@@ -8,6 +8,11 @@
   width: 100vw;
 }
 
+body {
+  /*background-color: #e5efff;*/
+  background-image: url("images/marble.jpeg");
+}
+
 /*HEADER*/
 
 .header {
@@ -29,7 +34,7 @@
 }
 
 .titles {
-  position: fixed;
+  position: absolute;
   font-family: 'Germania One', cursive;
   font-size: 18px;
   top: 73px;
@@ -108,6 +113,33 @@
   display: inline-block;
   margin: 0 auto;
   text-align: center;
+}
+
+/*ABOUT*/
+
+.about img {
+  height: 400px;
+}
+
+.about {
+  margin: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+#about-photo-caption {
+  position: absolute;
+  font-style: italic;
+  font-family: 'Germania One', cursive;
+  top: 405px;
+  left: 0;
+}
+
+#about-bio {
+  font-family: 'Germania One', cursive;
+  padding-left: 15px;
+  font-size: 24px;
+  width: 388px;
 }
 
 /*CONTACT*/
