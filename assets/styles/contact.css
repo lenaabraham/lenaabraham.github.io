@@ -1,0 +1,21 @@
+.hamburger-phone {
+  text-align: center;
+}
+
+.contact {
+  /*border: 1px solid black;*/
+  width: 380px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons {
+  cursor:url(../images/cursors/knife.png), auto;
+  font-size: 100px !important;
+}
+
+.icons:hover {
+  color: gray;
+}

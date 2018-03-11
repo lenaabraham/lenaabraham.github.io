@@ -1,0 +1,49 @@
+.photo {
+  align-self: center;
+  cursor:url(../images/cursors/knife.png), auto;
+}
+
+.photo:hover {
+  z-index: 5;
+  box-shadow: 0px 0px 2px 2px #474747;
+}
+
+.photo-row {
+  display: flex;
+  justify-content: space-between;
+  width: 96vw;
+  margin: 0 auto;
+  margin-bottom: 1.5vw;
+}
+
+.size-1 {
+  width: 100%;
+}
+
+.size-2 {
+  width: 49%;
+}
+
+.size-3 {
+  width: 32%;
+}
+
+/* MODAL */
+
+.modal-background {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color:rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+.modal-image {
+  position: relative;
+  align-self: center;
+  height: 96%;
+  top: 2%;
+}

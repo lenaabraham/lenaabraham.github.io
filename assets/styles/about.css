@@ -1,0 +1,37 @@
+.about {
+  margin: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.about img {
+  height: 400px;
+}
+
+.about-photo-div {
+  position: relative;
+}
+
+#about-photo-caption {
+  position: absolute;
+  font-style: italic;
+  font-family: 'Germania One', cursive;
+  top: 405px;
+  left: 0;
+}
+
+#about-bio {
+  font-family: 'Germania One', cursive;
+  padding-left: 15px;
+  font-size: 24px;
+  width: 388px;
+}
+
+.about-bio-link {
+  cursor: url(../images/cursors/knife.png), auto;
+  color: #6d6d6d;
+}
+
+.about-bio-link-hidden {
+  cursor: url(../images/cursors/knife.png), auto;
+}

@@ -1,0 +1,52 @@
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.video-div {
+  width: 280px;
+  height: 280px;
+  border: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.video {
+  border: 0;
+  width: 280px;
+  height: 280px;
+  z-index: 0;
+}
+
+.video-background-1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 280px;
+  height: 280px;
+  z-index: -10;
+
+  background: linear-gradient(to bottom right, #d1d1d1, #eaeaea);
+  animation: loader-1 3s ease infinite;
+}
+
+.video-background-2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 280px;
+  height: 280px;
+  z-index: -11;
+
+  background: linear-gradient(to bottom right, #eaeaea, #d1d1d1);
+}
+
+@-webkit-keyframes loader-1 {
+  0% { opacity: 0 }
+  50% { opacity: 1 }
+  100% { opacity: 0 }
+}​

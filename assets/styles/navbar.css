@@ -1,0 +1,43 @@
+.header {
+  background-color: rgba(270, 270, 270, 0.5);
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#lena-abraham {
+  font-family: 'Germania One', cursive;
+  font-weight: 900;
+  font-size: 50px;
+  margin-left: 40px;
+  margin-right: 60px;
+  cursor:url(../images/cursors/knife.png), auto;
+}
+
+.header-item {
+  font-family: 'Germania One', cursive;
+  font-weight: 900;
+  font-size: 35px;
+  color: gray;
+  margin-left: 30px;
+  cursor:url(../images/cursors/knife.png), auto;
+}
+
+.header-item:hover {
+  color: black;
+}
+
+.selected {
+  color: black;
+}
+
+.titles {
+  position: absolute;
+  font-family: 'Germania One', cursive;
+  font-size: 18px;
+  top: 73px;
+  left: 40px;
+  color: #6d6d6d;
+}
