@@ -26,10 +26,9 @@ const Root = () => {
           <Route exact path="/videos" component={Videos} />
           <Route exact path="/about" component={About} />
           <Route exact path="/contact" component={Contact} />
+          <Route exact path="/game" component={Game} />
         </Switch>
       </div>
     </HashRouter>
   )
 }
-
-// <Route exact path="/game" component={Game} />

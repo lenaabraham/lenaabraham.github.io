@@ -27,6 +27,7 @@
 
 .header-item:hover {
   color: black;
+  cursor:url(../images/cursors/knife.png), auto;
 }
 
 .selected {

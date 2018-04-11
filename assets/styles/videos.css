@@ -1,4 +1,10 @@
 .videos {
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.videos-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
