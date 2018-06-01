@@ -12,7 +12,15 @@ class Photos extends React.Component {
     return(
       <div className="photos">
         <div className="photo-row">
-          <Photo classes="photo size-2" source="assets/images/food_shots/slamon.jpg" />
+          <Photo classes="photo size-4" source="assets/images/food_shots/funnel.jpg" />
+          <div className="photo-stack">
+            <Photo classes="photo stack-size-1" source="assets/images/food_shots/lasagna.jpg" />
+            <Photo classes="photo stack-size-1" source="assets/images/food_shots/sword2.jpg" />
+          </div>
+          <Photo classes="photo size-4" source="assets/images/food_shots/brisket.jpg" />
+        </div>
+        <div className="photo-row">
+          <Photo classes="photo size-2" source="assets/images/food_shots/salmon.jpg" />
           <Photo classes="photo size-2" source="assets/images/food_shots/pork.jpg" />
         </div>
         <div className="photo-row">
@@ -27,16 +35,20 @@ class Photos extends React.Component {
         <div className="photo-row">
           <Photo classes="photo size-3" source="assets/images/food_shots/shrimpalf.jpg" />
           <Photo classes="photo size-3" source="assets/images/food_shots/wonton.jpg" />
-          <Photo classes="photo size-3" source="assets/images/food_shots/sword2.jpg" />
+          <Photo classes="photo size-3" source="assets/images/food_shots/adobo.jpg" />
         </div>
         <div className="photo-row">
           <Photo classes="photo size-2" source="assets/images/food_shots/chili.jpg" />
           <Photo classes="photo size-2" source="assets/images/food_shots/pancakes.jpg" />
         </div>
         <div className="photo-row">
-          <Photo classes="photo size-3" source="assets/images/food_shots/lasagna.jpg" />
+          <Photo classes="photo size-3" source="assets/images/food_shots/fried_chicken.jpg" />
           <Photo classes="photo size-3" source="assets/images/food_shots/shepherd.jpg" />
           <Photo classes="photo size-3" source="assets/images/food_shots/loin.jpg" />
+        </div>
+        <div className="photo-row">
+          <Photo classes="photo size-2" source="assets/images/food_shots/tenderloin.jpg" />
+          <Photo classes="photo size-2" source="assets/images/food_shots/cornbread.jpg" />
         </div>
       </div>
     )
