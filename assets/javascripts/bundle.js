@@ -24733,18 +24733,18 @@ var Photos = function (_React$Component) {
           { className: 'photo-row' },
           _react2.default.createElement(_photo2.default, { classes: 'photo size-3', source: 'assets/images/food_shots/shrimpalf.jpg' }),
           _react2.default.createElement(_photo2.default, { classes: 'photo size-3', source: 'assets/images/food_shots/wonton.jpg' }),
-          _react2.default.createElement(_photo2.default, { classes: 'photo size-3', source: 'assets/images/food_shots/adobo.jpg' })
+          _react2.default.createElement(_photo2.default, { classes: 'photo size-3', source: 'assets/images/food_shots/adobo.JPG' })
         ),
         _react2.default.createElement(
           'div',
           { className: 'photo-row' },
-          _react2.default.createElement(_photo2.default, { classes: 'photo size-2', source: 'assets/images/food_shots/tenderloin.jpg' }),
-          _react2.default.createElement(_photo2.default, { classes: 'photo size-2', source: 'assets/images/food_shots/cornbread.jpg' })
+          _react2.default.createElement(_photo2.default, { classes: 'photo size-2', source: 'assets/images/food_shots/tenderloin.JPG' }),
+          _react2.default.createElement(_photo2.default, { classes: 'photo size-2', source: 'assets/images/food_shots/cornbread.JPG' })
         ),
         _react2.default.createElement(
           'div',
           { className: 'photo-row' },
-          _react2.default.createElement(_photo2.default, { classes: 'photo size-3', source: 'assets/images/food_shots/fried_chicken.jpg' }),
+          _react2.default.createElement(_photo2.default, { classes: 'photo size-3', source: 'assets/images/food_shots/fried_chicken.JPG' }),
           _react2.default.createElement(_photo2.default, { classes: 'photo size-3', source: 'assets/images/food_shots/shepherd.jpg' }),
           _react2.default.createElement(_photo2.default, { classes: 'photo size-3', source: 'assets/images/food_shots/loin.jpg' })
         )

@@ -27,14 +27,14 @@ class Photos extends React.Component {
         <div className="photo-row">
           <Photo classes="photo size-3" source="assets/images/food_shots/shrimpalf.jpg" />
           <Photo classes="photo size-3" source="assets/images/food_shots/wonton.jpg" />
-          <Photo classes="photo size-3" source="assets/images/food_shots/adobo.jpg" />
+          <Photo classes="photo size-3" source="assets/images/food_shots/adobo.JPG" />
         </div>
         <div className="photo-row">
-          <Photo classes="photo size-2" source="assets/images/food_shots/tenderloin.jpg" />
-          <Photo classes="photo size-2" source="assets/images/food_shots/cornbread.jpg" />
+          <Photo classes="photo size-2" source="assets/images/food_shots/tenderloin.JPG" />
+          <Photo classes="photo size-2" source="assets/images/food_shots/cornbread.JPG" />
         </div>
         <div className="photo-row">
-          <Photo classes="photo size-3" source="assets/images/food_shots/fried_chicken.jpg" />
+          <Photo classes="photo size-3" source="assets/images/food_shots/fried_chicken.JPG" />
           <Photo classes="photo size-3" source="assets/images/food_shots/shepherd.jpg" />
           <Photo classes="photo size-3" source="assets/images/food_shots/loin.jpg" />
         </div>
