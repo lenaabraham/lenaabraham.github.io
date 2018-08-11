@@ -24733,7 +24733,7 @@ var Photos = function (_React$Component) {
           { className: 'photo-row' },
           _react2.default.createElement(_photo2.default, { classes: 'photo size-3', source: 'assets/images/food_shots/shrimpalf.jpg' }),
           _react2.default.createElement(_photo2.default, { classes: 'photo size-3', source: 'assets/images/food_shots/wonton.jpg' }),
-          _react2.default.createElement(_photo2.default, { classes: 'photo size-3', source: 'assets/images/food_shots/wonton.jpg' })
+          _react2.default.createElement(_photo2.default, { classes: 'photo size-3', source: 'assets/images/food_shots/adobo.jpg' })
         ),
         _react2.default.createElement(
           'div',

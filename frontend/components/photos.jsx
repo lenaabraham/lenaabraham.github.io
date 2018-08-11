@@ -27,7 +27,7 @@ class Photos extends React.Component {
         <div className="photo-row">
           <Photo classes="photo size-3" source="assets/images/food_shots/shrimpalf.jpg" />
           <Photo classes="photo size-3" source="assets/images/food_shots/wonton.jpg" />
-          <Photo classes="photo size-3" source="assets/images/food_shots/wonton.jpg" />
+          <Photo classes="photo size-3" source="assets/images/food_shots/adobo.jpg" />
         </div>
         <div className="photo-row">
           <Photo classes="photo size-2" source="assets/images/food_shots/tenderloin.jpg" />
