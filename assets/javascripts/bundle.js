@@ -25116,9 +25116,18 @@ var Contact = function (_React$Component) {
           'div',
           { className: 'contact' },
           _react2.default.createElement(
-            'a',
-            { href: 'mailto:lea273@nyu.edu?Subject=Sup', target: '_top' },
-            _react2.default.createElement('i', { className: 'fa fa-envelope-o icons', 'aria-hidden': 'true' })
+            'div',
+            { className: 'tooltip' },
+            _react2.default.createElement(
+              'a',
+              { href: 'mailto:lena.elisabeth.abraham@gmail.com?Subject=Sup', target: '_top' },
+              _react2.default.createElement('i', { className: 'fa fa-envelope-o icons', 'aria-hidden': 'true' })
+            ),
+            _react2.default.createElement(
+              'span',
+              { className: 'tooltiptext' },
+              'lena.elisabeth.abraham@gmail.com'
+            )
           ),
           _react2.default.createElement(
             'a',
