@@ -15,7 +15,7 @@ class Sweet extends React.Component {
           <Photo classes="photo size-2" source="assets/images/food_shots/blondies.jpg" />
         </div>
         <div className="photo-row">
-          <Photo classes="photo size-3" source="assets/images/food_shots/funnel.jpg" />
+          <Photo classes="photo size-3" source="assets/images/food_shots/funnel.JPG" />
           <div className="photo-column">
             <Photo classes="photo size-5" source="assets/images/food_shots/pie.jpg" />
             <Photo classes="photo size-5" source="assets/images/food_shots/pancakes.jpg" />
@@ -28,8 +28,8 @@ class Sweet extends React.Component {
         </div>
         <div className="photo-row">
           <Photo classes="photo size-3" source="assets/images/food_shots/cornbread.JPG" />
-          <Photo classes="photo size-3" source="assets/images/food_shots/brittle.JPG" />
-          <Photo classes="photo size-3" source="assets/images/food_shots/coconut_pancakes_2.JPG" />
+          <Photo classes="photo size-3" source="assets/images/food_shots/brittle.jpg" />
+          <Photo classes="photo size-3" source="assets/images/food_shots/coconut_pancakes_2.jpg" />
         </div>
       </div>
     )

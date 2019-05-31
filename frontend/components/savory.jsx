@@ -20,7 +20,7 @@ class Savory extends React.Component {
           <Photo classes="photo size-3" source="assets/images/food_shots/chicken.jpg" />
         </div>
         <div className="photo-row">
-          <Photo classes="photo size-2" source="assets/images/food_shots/adobo.jpg" />
+          <Photo classes="photo size-2" source="assets/images/food_shots/adobo.JPG" />
           <Photo classes="photo size-2" source="assets/images/food_shots/sword2.jpg" />
         </div>
         <div className="photo-row">
