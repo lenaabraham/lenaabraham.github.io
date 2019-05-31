@@ -1,54 +1,41 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-import Photo from './photo';
+import Savory from './savory';
+import Sweet from './sweet';
 
 class Photos extends React.Component {
   constructor(props) {
     super(props)
+
+    this.state = {
+      view: "savory"
+    }
+
+    this.toggleView = this.toggleView.bind(this)
+  }
+
+  toggleView(view) {
+    this.setState({view: view})
   }
 
   render() {
+    let component
+    if (this.state.view === "savory") {
+      component = <Savory />
+    } else if (this.state.view === "sweet") {
+      component = <Sweet />
+    }
     return(
-      <div className="photos">
-        <div className="photo-row">
-          <Photo classes="photo size-2" source="assets/images/food_shots/salmon.jpg" />
-          <Photo classes="photo size-2" source="assets/images/food_shots/pancakes.jpg" />
+      <div>
+        <div className="photo-viewer">
+          <div onClick={() => this.toggleView("savory")} className={`photo-viewer-option cheeto ${this.state.view === "savory" ? "viewing" : null}`}><t className="photo-viewer-text">Savory</t></div>
+          <div onClick={() => this.toggleView("sweet")} className={`photo-viewer-option lolly ${this.state.view === "sweet" ? "viewing" : null}`}><t className="photo-viewer-text">Sweet</t></div>
         </div>
-        <div className="photo-row">
-          <Photo classes="photo size-3" source="assets/images/food_shots/chicken.jpg" />
-          <Photo classes="photo size-3" source="assets/images/food_shots/salsbury.jpg" />
-          <Photo classes="photo size-3" source="assets/images/food_shots/spagnmeat.jpg" />
-        </div>
-        <div className="photo-row">
-          <Photo classes="photo size-2" source="assets/images/food_shots/lasagna.jpg" />
-          <Photo classes="photo size-2" source="assets/images/food_shots/sword2.jpg" />
-        </div>
-        <div className="photo-row">
-          <Photo classes="photo size-3" source="assets/images/food_shots/shrimpalf.jpg" />
-          <Photo classes="photo size-3" source="assets/images/food_shots/wonton.jpg" />
-          <Photo classes="photo size-3" source="assets/images/food_shots/adobo.JPG" />
-        </div>
-        <div className="photo-row">
-          <Photo classes="photo size-2" source="assets/images/food_shots/tenderloin.JPG" />
-          <Photo classes="photo size-2" source="assets/images/food_shots/cornbread.JPG" />
-        </div>
-        <div className="photo-row">
-          <Photo classes="photo size-3" source="assets/images/food_shots/fried_chicken.JPG" />
-          <Photo classes="photo size-3" source="assets/images/food_shots/shepherd.jpg" />
-          <Photo classes="photo size-3" source="assets/images/food_shots/loin.jpg" />
-        </div>
+        { component }
       </div>
     )
   }
 }
 
-// <div className="photo-row">
-//   <Photo classes="photo size-4" source="assets/images/food_shots/funnel.jpg" />
-//   <div className="photo-stack">
-//     <Photo classes="photo stack-size-1" source="assets/images/food_shots/lasagna.jpg" />
-//     <Photo classes="photo stack-size-1" source="assets/images/food_shots/sword2.jpg" />
-//   </div>
-//   <Photo classes="photo size-4" source="assets/images/food_shots/brisket.jpg" />
-// </div>
 export default withRouter(Photos);

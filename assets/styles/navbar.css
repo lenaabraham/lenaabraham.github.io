@@ -23,6 +23,7 @@
   color: gray;
   margin-left: 30px;
   cursor:url(../images/cursors/knife.png), auto;
+  position: relative;
 }
 
 .header-item:hover {
@@ -41,4 +42,33 @@
   top: 73px;
   left: 40px;
   color: #6d6d6d;
+}
+
+.dropdown {
+  position: absolute;
+  left: 8px;
+  top: 40px;
+  height: 78px;
+  width: 100px;
+  background-color: rgba(270, 270, 270, 1);
+  border: 0px;
+  border-radius: 4px;
+  box-shadow: -4px 4px 5px 0px rgba(0,0,0,0.5);
+}
+
+.dropdown-item-container {
+  padding: 4px;
+}
+
+.dropdown-item {
+  font-family: 'Germania One', cursive;
+  font-weight: 900;
+  font-size: 20px;
+  color: gray;
+  padding: 8px;
+}
+
+.dropdown-item:hover {
+  color: black;
+  cursor:url(../images/cursors/knife.png), auto;
 }

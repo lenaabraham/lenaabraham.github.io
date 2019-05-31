@@ -1,0 +1,68 @@
+.photo-viewer {
+  position: absolute;
+  top: 116px;
+  width: 260px;
+  height: 44px;
+  /* background-image: linear-gradient(rgba(270, 270, 270, 0.5), rgba(270, 270, 270, 1)); */
+  left: calc(50% - 130px);
+  /* border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.photo-viewer-option {
+  width: 100px;
+  height: 36px;
+  border: 4px solid rgba(0,0,0,0);
+  border-radius: 12px;
+  cursor: url(../images/cursors/knife.png), auto;
+  text-align: center;
+  vertical-align: middle;
+}
+.photo-viewer-option:hover .photo-viewer-text {
+  color: black;
+  text-shadow: 2px 2px white;
+}
+.photo-viewer-option:hover {
+  border: 4px solid black;
+  background-color: rgba(0,0,0,0.5);
+}
+.cheeto {
+  background: linear-gradient(rgba(270,270,270,0.1), rgba(270,270,270,0.1)),url("../images/cheeto.jpeg");
+  background-size: 70px;
+}
+.lolly {
+  background: url("../images/candy_swirl.jpeg");
+  background-size: 100px;
+  background-position: center;
+}
+.cheeto:hover{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/cheeto.jpeg");
+  background-size: 70px;
+}
+.lolly:hover{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/candy_swirl.jpeg");
+  background-size: 100px;
+  background-position: center;
+}
+
+.photo-viewer-text {
+  position: relative;
+  display: inline-block;
+  font-family: 'Germania One', cursive;
+  font-weight: 900;
+  font-size: 24px;
+  color: white;
+  text-shadow: 2px 2px black;
+  padding-top: 6px;
+}
+
+.viewing {
+  border: 4px solid black;
+}
+
+.viewing .photo-viewer-text {
+  color: black;
+  text-shadow: 2px 2px white;
+}
