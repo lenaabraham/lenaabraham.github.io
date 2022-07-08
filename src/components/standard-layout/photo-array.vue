@@ -11,21 +11,26 @@
 </template>
 
 <script>
-  import PhotoList from '@/photos.js';
   import PhotoImg from './photo-img.vue';
 
   export default {
-    mixins: [PhotoList],
     components: {
       PhotoImg,
     },
 
+    props: {
+      photos: {
+        type: Array,
+        required: true,
+      },
+      fullColors: {
+        type: Object,
+        required: true,
+      },
+    },
+
     data() {
       return {
-        fullColors: {
-          left: { r: 242, g: 156, b: 70 },
-          right: { r: 99, g: 173, b: 107 },
-        },
         colorDistances: null,
       };
     },
