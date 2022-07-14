@@ -35,6 +35,11 @@ export default {
           "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/granita3-1652105134.jpg",
           "https://hips.hearstapps.com/vidthumb/images/delish-081821-kranky-cupcakes-03-jg-1632258168.jpg",
           "https://hips.hearstapps.com/hmg-prod/images/delish-091621-french-apple-tart-05-jg-1632847288.jpg",
+          "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/king-cake-1-1645929161.jpg",
+          "https://hips.hearstapps.com/hmg-prod/images/delish-ricotta-cookies-1638982217.jpg",
+          "https://hips.hearstapps.com/hmg-prod/images/delish-mississippi-mudpie-111121-09-jg-1637173848.jpg",
+          "https://hips.hearstapps.com/hmg-prod/images/delish-080521-apple-coffee-cake-05-landscape-jg-1630009159.jpg",
+          "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-091621-apple-crumb-pie-06-jg-1632846995.jpg",
         ],
         drinks: [
           "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/rumrunner-1-1647469915.jpg",

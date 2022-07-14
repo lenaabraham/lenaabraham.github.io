@@ -2,7 +2,8 @@
   <nav>
     <router-link to="/">Savory</router-link> |
     <router-link to="/sweet">Sweet</router-link> |
-    <router-link to="/drinks">Drinks</router-link>
+    <router-link to="/drinks">Drinks</router-link> |
+    <router-link to="/contact">Contact</router-link>
   </nav>
   <router-view/>
 </template>
