@@ -1,28 +1,23 @@
 <template lang="pug">
 PhotoArray(
   :photos="recipes.sweet"
-  :full-colors="colors"
+  :full-colors="colors.recipes"
 )
 </template>
 
 <script>
 import PhotoArray from '@/components/standard-layout/photo-array.vue'
 import PhotoList from '@/photos.js';
+import Colors from '@/colors.js';
 
 export default {
   name: 'SweetRecipes',
-  mixins: [PhotoList],
+  mixins: [
+    PhotoList,
+    Colors,
+  ],
   components: {
     PhotoArray,
-  },
-
-  data() {
-    return {
-      colors: {
-        left: { r: 242, g: 156, b: 70 },
-        right: { r: 99, g: 173, b: 107 },
-      },
-    };
   },
 }
 </script>
