@@ -95,6 +95,6 @@
     transition: all 0.2s linear;
   }
   .sub-nav.display {
-    height: 22px;
+    height: 36px;
   }
 </style>
