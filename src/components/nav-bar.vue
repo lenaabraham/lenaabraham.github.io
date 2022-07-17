@@ -3,6 +3,10 @@
   .sub-nav.display
     router-link(
       to="/"
+    ) Home
+    div |
+    router-link(
+      to="/styling/savory"
       :class="{ selected: stylingSelected }"
       @mouseover="mouseover('styling')"
       @mouseout="mouseout('styling')"
@@ -23,7 +27,7 @@
     @mouseover="mouseover('styling')"
     @mouseout="mouseout('styling')"
   )
-    router-link(to="/") Savory
+    router-link(to="/styling/savory") Savory
     div |
     router-link(to="/styling/sweet") Sweet
     div |
@@ -65,14 +69,13 @@
 </script>
 
 <style scoped lang="scss">
-  $selected-color: #b3b3b3;
+  $selected-color: #424242;
   .nav {
-    background-color: white;
     padding: 30px;
     margin-bottom: 8px;
   }
   .nav a {
-    color: #2c3e50;
+    color: black;
     text-decoration: none;
   }
   .nav a.router-link-exact-active { color: $selected-color }

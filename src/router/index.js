@@ -1,4 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
+import Home from '../views/home.vue'
 import SavoryStyling from '../views/styling/savory.vue'
 import SweetStyling from '../views/styling/sweet.vue'
 import DrinksStyling from '../views/styling/drinks.vue'
@@ -8,6 +9,11 @@ import Contact from '../views/contact.vue'
 const routes = [
   {
     path: '/',
+    name: 'home',
+    component: Home,
+  },
+  {
+    path: '/styling/savory',
     name: 'styling-savory',
     component: SavoryStyling,
   },
