@@ -4,6 +4,8 @@ import SavoryStyling from '../views/styling/savory.vue'
 import SweetStyling from '../views/styling/sweet.vue'
 import DrinksStyling from '../views/styling/drinks.vue'
 import SavoryRecipes from '../views/recipes/savory.vue'
+import SweetRecipes from '../views/recipes/sweet.vue'
+import DrinksRecipes from '../views/recipes/drinks.vue'
 import Contact from '../views/contact.vue'
 
 const routes = [
@@ -31,6 +33,16 @@ const routes = [
     path: '/recipes/savory',
     name: 'recipes-savory',
     component: SavoryRecipes,
+  },
+  {
+    path: '/recipes/sweet',
+    name: 'recipes-sweet',
+    component: SweetRecipes,
+  },
+  {
+    path: '/recipes/drinks',
+    name: 'recipes-drinks',
+    component: DrinksRecipes,
   },
   {
     path: '/contact',

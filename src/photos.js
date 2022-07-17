@@ -244,6 +244,82 @@ export default {
             link: "https://www.delish.com/cooking/recipe-ideas/a36621011/baked-feta-eggs-recipe/",
           },
         ],
+        sweet: [
+          {
+            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-210915-cranberry-pie-007-ab-1632768669.jpg",
+            link: "https://www.delish.com/cooking/recipe-ideas/a37418556/cranberry-pie-recipe/",
+          },
+          {
+            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-202105-mangosorbetstrawberrytajinswirl-129-1621023896.jpg",
+            link: "https://www.delish.com/cooking/recipe-ideas/a36341294/mangonada-sorbet-recipe/",
+          },
+          {
+            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-brunch-giantdanish073-sc-1614265214.jpg",
+            link: "https://www.delish.com/cooking/recipe-ideas/a35604334/giant-fruit-danish-recipe/",
+          },
+          {
+            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-202012-biscochitos-019-1608591080.jpg",
+            link: "https://www.delish.com/cooking/recipe-ideas/a35045309/biscochitos-recipe/",
+          },
+          {
+            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-200318-seo-olive-oil-cake-horizontal-v2-13783-eb-1585337488.jpg",
+            link: "https://www.delish.com/cooking/recipe-ideas/a31789821/olive-oil-cake-recipe/",
+          },
+          {
+            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-200318-seo-gluten-free-carrot-cake-horizontal-14237-eb-1585337682.jpg",
+            link: "https://www.delish.com/cooking/recipe-ideas/a31747891/gluten-free-carrot-cake-recipe/",
+          },
+          {
+            image: "https://hips.hearstapps.com/hmg-prod/images/banana-pudding-bars-horizontal-1536693077.png",
+            link: "https://www.delish.com/cooking/recipe-ideas/a19756498/banana-pudding-cheesecake-bars-recipe/",
+          },
+          {
+            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-190828-boston-creme-cheesecake-0092-landscape-pf-1568134310.jpg",
+            link: "https://www.delish.com/cooking/recipe-ideas/recipes/a55967/boston-cream-cheesecake-recipe/",
+          },
+          {
+            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-190731-key-lime-cheesecake-0083-landscape-pf-1565820790.jpg",
+            link: "https://www.delish.com/cooking/recipe-ideas/a28556089/key-lime-cheesecake-recipe/",
+          },
+          {
+            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-191907-bread-pudding-0197-landscape-pf-1564579344.jpg",
+            link: "https://www.delish.com/cooking/recipe-ideas/a28484441/easy-bread-pudding-recipe/",
+          },
+          {
+            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-191907-shark-week-cheesecake-0098-landscape-pf-1564148155.png",
+            link: "https://www.delish.com/cooking/recipe-ideas/a28424745/no-bake-shark-tank-cheesecake-recipe/",
+          },
+          {
+            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-190605-blueberry-cobbler-157-landscape-pf-1560443736.jpg",
+            link: "https://www.delish.com/cooking/recipe-ideas/a27479215/easy-blueberry-cobbler-recipe/",
+          },
+        ],
+        drinks: [
+          {
+            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/bees-knees1-1655991994.jpg",
+            link: "https://www.delish.com/cooking/recipe-ideas/a40364883/bees-knees-cocktail-recipe/",
+          },
+          {
+            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lemon-blueberry-daiquiris5-1652296505.jpg",
+            link: "https://www.delish.com/cooking/recipe-ideas/a39818825/lemon-blueberry-daiquiri-recipe/",
+          },
+          {
+            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/frozen-strawberry-margarita1-1649453140.jpg",
+            link: "https://www.delish.com/cooking/recipe-ideas/a39613646/frozen-strawberry-margarita-recipe/",
+          },
+          {
+            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-210310-spiked-coconut-lemonade-008-ab-1617819418.jpg",
+            link: "https://www.delish.com/cooking/recipe-ideas/a35843353/spiked-coconut-limeade-recipe/",
+          },
+          {
+            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-210322-basil-cocktail-02-landscape-jg-1623113468.jpg",
+            link: "https://www.delish.com/cooking/a36426261/spiked-sparkling-basil-lemonade/",
+          },
+          {
+            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-201215-greyhound7764-sc-1614270645.jpg",
+            link: "https://www.delish.com/cooking/recipe-ideas/a35649759/sparkling-greyhound-cocktail-recipe/",
+          },
+        ],
       },
     };
   },

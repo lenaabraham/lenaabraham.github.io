@@ -38,6 +38,10 @@
     @mouseout="mouseout('recipes')"
   )
     router-link(to="/recipes/savory") Savory
+    div |
+    router-link(to="/recipes/sweet") Sweet
+    div |
+    router-link(to="/recipes/drinks") Drinks
 </template>
 
 <script>
