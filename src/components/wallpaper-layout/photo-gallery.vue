@@ -1,7 +1,7 @@
 <template lang="pug">
 .gallery
   template(
-    v-for="(photo, idx) in photos"
+    v-for="(photo, idx) in styling.savory"
     :key="idx"
   )
     PhotoAndFrame(

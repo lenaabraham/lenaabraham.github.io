@@ -6,7 +6,7 @@
   PhotoImg.margin-right(
     v-for="(photo, idx) in photos"
     :key="idx"
-    :src="photo"
+    :photo="photo"
   )
 </template>
 
@@ -89,9 +89,13 @@
     display: flex;
     overflow-x: scroll;
     height: 600px;
+    padding: 8px 0;
 
     .margin-right:not(:last-child) {
       margin-right: 24px;
+    }
+    .margin-right:last-child {
+      margin-right: 8px;
     }
   }
 </style>

@@ -1,6 +1,6 @@
 <template lang="pug">
 PhotoArray(
-  :photos="photos.drinks"
+  :photos="styling.drinks"
   :full-colors="colors"
 )
 </template>

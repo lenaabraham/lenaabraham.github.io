@@ -1,16 +1,19 @@
 <template lang="pug">
 .container
-  img.img(
-    :src="src"
+  a(
+    :href="photo.link"
+    target="_blank"
   )
-  .link Recipe ⮕
+    img.img(
+      :src="photo.image"
+    )
 </template>
 
 <script>
   export default {
     props: {
-      src: {
-        type: String,
+      photo: {
+        type: Object,
         required: true,
       },
     },
@@ -23,27 +26,12 @@
 
     .img {
       height: 100%;
+      cursor: pointer;
     }
-
-    .link {
-      display: none;
+    .img:hover {
+      box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.41);
+      -webkit-box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.41);
+      -moz-box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.41);
     }
-    // TODO: Get this working
-    // $height: 40px;
-    // $padding: 8px;
-    // .img:hover + .link {
-    //   display: block;
-    //   position: absolute;
-    //   width: calc(100% - $padding);
-    //   height: $height;
-    //   bottom: 0;
-    //   right: 0;
-    //   padding: $padding;
-    //
-    //   background-image: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 30%);
-    //
-    //   text-align: right;
-    //   line-height: calc($height / 2 * 3);
-    // }
   }
 </style>
