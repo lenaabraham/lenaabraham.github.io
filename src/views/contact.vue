@@ -86,9 +86,10 @@ form.contact-form(
     flex-direction: column;
 
     padding: $padding;
-    background-color: #450666;
-    width: 400px;
+    background-color: #accde6;
+    width: 1000px;
 
+    border: 1px solid #878787;
     border-radius: $padding / 2;
 
     .input:not(:last-child) {
@@ -97,6 +98,9 @@ form.contact-form(
     .input {
       font-family: Avenir, Helvetica, Arial, sans-serif;
       font-size: 24px;
+    }
+    .input:focus {
+      outline: none;
     }
     .textarea {
       resize: none;

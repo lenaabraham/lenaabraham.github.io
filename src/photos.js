@@ -50,7 +50,27 @@ export default {
           "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/orange-crush-horizontal-1646080000.jpg",
           "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-210525-peachmargarita-11-portrait-jg-1623188077.jpg",
           "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lemon-poppyseed-drop4-1649691194.jpg",
-        ]
+        ],
+      },
+      recipes: {
+        savory: [
+          "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/210210-delish-vegan-cookbook-chickpea-noodle-soup-vertical-0034-eb-1625771940.jpg",
+          "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/fennel-salad-horizontal2-1646080323.jpg",
+          "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-20210423-halloumi-salad-007-ab-1620075935.jpg",
+          "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-211218-one-pot-kimchi-pasta-005-ab-web-1641846008.jpg",
+          "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrimp-mango-salad2-1647534685.jpg",
+          "https://s3.us-east-2.amazonaws.com/pfimg1/001/44/36/4436b45c73514bdb00750f3512d8baab_1280m.jpg",
+          "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/harissa-deviled-eggs3-1654529953.jpg",
+          "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/garlicky-feta-eggplant-pasta2-1650061805.jpg",
+          "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spicyapricotglazedwings2-1643994046.jpg",
+          "https://hips.hearstapps.com/vidthumb/images/shrimppoboy-1644937301.jpg",
+          "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-220210-tofu-lettuce-wraps-001-ab-web-1646079642.jpg",
+          "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-220308-vegetarian-matzo-ball-soup-001-ab-web-1647464560.jpg",
+          "https://hips.hearstapps.com/vidthumb/images/delish-dill-cheddar-pierogis-102821-04-jg-min-1636731147.jpg",
+          "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/211104-delish-seo-esquites-fritters-horizontal-0243-eb-1636752242.jpg",
+          "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-210722-squash-casserole-03-landscape-jg-1627488869.jpg",
+          "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-210525-bakedeggs-02-landscape-jg-1622840259.jpg",
+        ],
       },
     };
   },

@@ -1,24 +1,30 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import Savory from '../views/savory.vue'
-import Sweet from '../views/sweet.vue'
-import Drinks from '../views/drinks.vue'
+import SavoryStyling from '../views/styling/savory.vue'
+import SweetStyling from '../views/styling/sweet.vue'
+import DrinksStyling from '../views/styling/drinks.vue'
+import SavoryRecipes from '../views/recipes/savory.vue'
 import Contact from '../views/contact.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'savory',
-    component: Savory,
+    name: 'styling-savory',
+    component: SavoryStyling,
   },
   {
-    path: '/sweet',
-    name: 'sweet',
-    component: Sweet,
+    path: '/styling/sweet',
+    name: 'styling-sweet',
+    component: SweetStyling,
   },
   {
-    path: '/drinks',
-    name: 'drinks',
-    component: Drinks,
+    path: '/styling/drinks',
+    name: 'styling-drinks',
+    component: DrinksStyling,
+  },
+  {
+    path: '/recipes/savory',
+    name: 'recipes-savory',
+    component: SavoryRecipes,
   },
   {
     path: '/contact',

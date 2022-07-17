@@ -1,12 +1,17 @@
 <template>
-  <nav>
-    <router-link to="/">Savory</router-link> |
-    <router-link to="/sweet">Sweet</router-link> |
-    <router-link to="/drinks">Drinks</router-link> |
-    <router-link to="/contact">Contact</router-link>
-  </nav>
+  <NavBar />
   <router-view/>
 </template>
+
+<script>
+  import NavBar from '@/components/nav-bar.vue';
+
+  export default {
+    components: {
+      NavBar,
+    },
+  }
+</script>
 
 <style>
 #app {
@@ -16,16 +21,4 @@
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #e6e6e6;
-}
 </style>
