@@ -10,7 +10,7 @@ import PhotoArray from '@/components/standard-layout/photo-array.vue'
 import PhotoList from '@/photos.js';
 
 export default {
-  name: 'DrinksView',
+  name: 'DrinksStyling',
   mixins: [PhotoList],
   components: {
     PhotoArray,
