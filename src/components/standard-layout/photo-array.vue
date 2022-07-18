@@ -61,7 +61,7 @@
           });
         });
         const gradient = this.linearGradient(gradientColorValues);
-        return gradient;
+        document.body.style.background = gradient;
       },
 
       onScroll(e) {
