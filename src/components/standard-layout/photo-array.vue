@@ -12,8 +12,10 @@
 
 <script>
   import PhotoImg from './photo-img.vue';
+  import Colors from '@/colors.js';
 
   export default {
+    mixins: [Colors],
     components: {
       PhotoImg,
     },
@@ -48,20 +50,17 @@
 
     methods: {
       setBodyBackground(scrollPercentages) {
-        const gradientColorValues = { left: [], right: []};
+        const gradientColorValues = { left: {}, right: {}};
         ['r', 'g', 'b'].map((rgbKey) => {
           const origin = this.fullColors.left[rgbKey]
           const distance = this.colorDistances[rgbKey];
           ['left', 'right'].forEach((side) => {
             const partialDistance = scrollPercentages[side] * distance;
             const rgbVal = parseInt(origin - partialDistance);
-            gradientColorValues[side].push(rgbVal);
+            gradientColorValues[side][rgbKey] = rgbVal;
           });
         });
-        const gradientColorPhrases =['left', 'right'].map((side) => {
-          return `rgb(${gradientColorValues[side].join(', ')})`;
-        });
-        const gradient = `linear-gradient(to right, ${gradientColorPhrases.join(', ')})`;
+        const gradient = this.linearGradient(gradientColorValues);
         document.body.style.backgroundImage = gradient;
       },
 

@@ -17,4 +17,16 @@ export default {
       }
     };
   },
+
+  methods: {
+    linearGradient(colors) {
+      const gradientColorPhrases =['left', 'right'].map((side) => {
+        const rgbObj = colors[side];
+        const rgbVals = [rgbObj['r'], rgbObj['g'], rgbObj['b']];
+        return `rgb(${rgbVals.join(', ')})`;
+      });
+      const gradient = `linear-gradient(to right, ${gradientColorPhrases.join(', ')})`;
+      document.body.style.backgroundImage = gradient;
+    },
+  },
 }
