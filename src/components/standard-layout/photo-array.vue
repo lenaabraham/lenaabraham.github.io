@@ -45,7 +45,7 @@
       this.colorDistances = distances;
 
       const array = this.$refs.array;
-      this.registerScroll(array);
+      this.registerScroll(array, true);
     },
 
     methods: {
@@ -69,26 +69,38 @@
         this.registerScroll(array);
       },
 
-      registerScroll(array) {
+      registerScroll(array, isFromMount) {
         const scrollLeft = array.scrollLeft;
         const scrollRight = array.scrollLeft + array.offsetWidth;
-        const scrollPercentageLeft = scrollLeft / parseFloat(array.scrollWidth);
-        const scrollPercentageRight = scrollRight / parseFloat(array.scrollWidth);
-        this.setBodyBackground({
-          left: scrollPercentageLeft,
-          right: scrollPercentageRight,
-        });
+        const scrollWidth = parseFloat(array.scrollWidth);
+        if (isFromMount && scrollWidth === scrollRight) {
+          // The photos haven't loaded and it thinks it's just the full width of the screen
+          // Gotta hack it until it's fully loaded
+          this.setBodyBackground({
+            left: 0,
+            right: 0.1,
+          });
+        } else {
+          const scrollPercentageLeft = scrollLeft / scrollWidth;
+          const scrollPercentageRight = scrollRight / scrollWidth;
+          this.setBodyBackground({
+            left: scrollPercentageLeft,
+            right: scrollPercentageRight,
+          });
+        }
       },
     },
   }
 </script>
 
 <style scoped lang="scss">
+  $height: 600px;
   .array {
     display: flex;
     overflow-x: scroll;
-    height: 600px;
-    padding: 8px 0;
+    height: $height;
+    margin-top: calc(50vh - #{$height / 2});
+    padding: 16px;
 
     .margin-right:not(:last-child) {
       margin-right: 24px;

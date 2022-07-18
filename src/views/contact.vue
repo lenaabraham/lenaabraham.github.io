@@ -1,4 +1,5 @@
 <template lang="pug">
+HomeButton
 form.contact-form(
   ref="form"
   @submit.prevent="sendEmail"
@@ -36,10 +37,16 @@ form.contact-form(
 </template>
 
 <script>
+  import HomeButton from '@/components/home-button.vue';
   import emailjs from '@emailjs/browser';
+  import Colors from '@/colors.js';
 
   export default {
     name: 'ContactView',
+    mixins: [Colors],
+    components: {
+      HomeButton,
+    },
 
     data() {
       return {
@@ -57,7 +64,7 @@ form.contact-form(
     },
 
     mounted() {
-      const gradient = 'linear-gradient(to right, #FFFFFF, #FFFFFF)'
+      const gradient = this.linearGradient(this.colors.contact);
       document.body.style.backgroundImage = gradient;
     },
 
@@ -81,7 +88,7 @@ form.contact-form(
 <style scoped lang="scss">
   $padding: 16px;
   .contact-form {
-    margin-left: 32px;
+    margin: 32px;
     display: flex;
     flex-direction: column;
 

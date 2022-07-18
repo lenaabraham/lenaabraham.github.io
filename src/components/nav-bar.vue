@@ -1,3 +1,4 @@
+<!-- Not currently in use! -->
 <template lang="pug">
 .nav
   .sub-nav.display
