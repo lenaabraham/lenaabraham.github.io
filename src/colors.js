@@ -25,8 +25,7 @@ export default {
         const rgbVals = [rgbObj['r'], rgbObj['g'], rgbObj['b']];
         return `rgb(${rgbVals.join(', ')})`;
       });
-      const gradient = `linear-gradient(to right, ${gradientColorPhrases.join(', ')})`;
-      document.body.style.backgroundImage = gradient;
+      return `linear-gradient(to right, ${gradientColorPhrases.join(', ')})`;
     },
   },
 }
