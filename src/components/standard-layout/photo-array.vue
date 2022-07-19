@@ -100,7 +100,7 @@
     overflow-x: scroll;
     height: $height;
     margin-top: calc(50vh - #{$height / 2});
-    padding: 16px;
+    padding: 0 16px;
 
     .margin-right:not(:last-child) {
       margin-right: 24px;

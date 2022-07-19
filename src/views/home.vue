@@ -1,36 +1,55 @@
 <template lang="pug">
 .container
+  section(:style="sectionStyles.contact")
+    .header-group(
+      ref="contact"
+      @mouseover="adjustHeight('contact', 3)"
+      @mouseout="adjustHeight('contact', 1)"
+    )
+      .header.primary Lena Abraham
+      .header(@click="open('/about')") About
+      .header(@click="open('/contact')") Contact
+    Magnet(
+      src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/orange-crush-horizontal-1646080000.jpg"
+    )
   section(:style="sectionStyles.styling")
     .header-group(
       ref="styling"
       @mouseover="adjustHeight('styling', 4)"
       @mouseout="adjustHeight('styling', 1)"
     )
-      .header(@click="open('/styling/savory')") styling
-      .header(@click="open('/styling/savory')") savory
-      .header(@click="open('/styling/sweet')") sweet
-      .header(@click="open('/styling/drinks')") drinks
+      .header.primary Styling
+      .header(@click="open('/styling/savory')") Savory
+      .header(@click="open('/styling/sweet')") Sweet
+      .header(@click="open('/styling/drinks')") Drinks
+    Magnet(
+      src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/fennel-salad-horizontal2-1646080323.jpg"
+    )
   section(:style="sectionStyles.recipes")
     .header-group(
       ref="recipes"
       @mouseover="adjustHeight('recipes', 4)"
       @mouseout="adjustHeight('recipes', 1)"
     )
-      .header(@click="open('/recipes/savory')") recipes
-      .header(@click="open('/recipes/savory')") savory
-      .header(@click="open('/recipes/sweet')") sweet
-      .header(@click="open('/recipes/drinks')") drinks
-  section(:style="sectionStyles.contact")
-    .header-group
-      .header(@click="open('/contact')") contact
+      .header.primary Recipes
+      .header(@click="open('/recipes/savory')") Savory
+      .header(@click="open('/recipes/sweet')") Sweet
+      .header(@click="open('/recipes/drinks')") Drinks
+    Magnet(
+      src="https://hips.hearstapps.com/hmg-prod/images/strawberry-shortcake-ice-cream-cake-1649267424.jpg"
+    )
 </template>
 
 <script>
+  import Magnet from '@/components/magnet.vue';
   import Colors from '@/colors.js';
 
   export default {
     name: 'HomeView',
     mixins: [Colors],
+    components: {
+      Magnet,
+    },
 
     data() {
       return {
@@ -60,7 +79,7 @@
     },
 
     mounted() {
-      ['styling', 'recipes'].forEach(group => this.adjustHeight(group, 1));
+      ['styling', 'recipes', 'contact'].forEach(group => this.adjustHeight(group, 1));
     },
 
     methods: {
@@ -91,8 +110,8 @@
       width: 100%;
       height: 100vh;
       padding: 36px;
-      text-align: center;
       transition: all 0.5s;
+      position: relative;
 
       .header-group {
         display: inline-flex;
@@ -107,7 +126,7 @@
         font-size: 36px;
         margin-bottom: 12px;
       }
-      .header:hover {
+      .header:not(.primary):hover {
         color: white;
       }
     }
