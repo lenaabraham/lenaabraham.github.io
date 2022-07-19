@@ -2,18 +2,32 @@ export default {
   data() {
     return {
       colors: {
+        // Will's experiment
+        contact: {
+          left: { r: 225, g: 236, b: 242 },
+          right: { r: 244, g: 194, b: 133 },
+        },
         styling: {
-          left: { r: 242, g: 156, b: 70 },
-          right: { r: 99, g: 173, b: 107 },
+          left: { r: 244, g: 194, b: 133 },
+          right: { r: 245, g: 211, b: 127 },
         },
         recipes: {
-          left: { r: 215, g: 187, b: 252 },
-          right: { r: 255, g: 163, b: 197 },
+          left: { r: 245, g: 211, b: 127 },
+          right: { r: 108, g: 225, b: 225 },
         },
-        contact: {
-          left: { r: 150, g: 181, b: 148 },
-          right: { r: 82, g: 179, b: 148 },
-        },
+        // Lena's original
+        // contact: {
+        //   left: { r: 197, g: 149, b: 245 },
+        //   right: { r: 237, g: 221, b: 78 },
+        // },
+        // styling: {
+        //   left: { r: 245, g: 143, b: 42 },
+        //   right: { r: 73, g: 88, b: 245 },
+        // },
+        // recipes: {
+        //   left: { r: 79, g: 232, b: 65 },
+        //   right: { r: 232, g: 81, b: 81 },
+        // },
       }
     };
   },
