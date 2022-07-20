@@ -2,18 +2,18 @@ export default {
   data() {
     return {
       colors: {
-        // Will's experiment
+        // Lena's experiment (snake variety)
         contact: {
-          left: { r: 225, g: 236, b: 242 },
-          right: { r: 244, g: 194, b: 133 },
+          left: { r: 187, g: 223, b: 197 },
+          right: { r: 186, g: 183, b: 0 },
         },
         styling: {
-          left: { r: 244, g: 194, b: 133 },
-          right: { r: 245, g: 211, b: 127 },
+          left: { r: 186, g: 183, b: 0 },
+          right: { r: 96, g: 147, b: 93 },
         },
         recipes: {
-          left: { r: 245, g: 211, b: 127 },
-          right: { r: 108, g: 225, b: 225 },
+          left: { r: 96, g: 147, b: 93 },
+          right: { r: 20, g: 52, b: 43 },
         },
         // Lena's original
         // contact: {
