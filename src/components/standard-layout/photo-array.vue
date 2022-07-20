@@ -95,12 +95,18 @@
 
 <style scoped lang="scss">
   $height: 600px;
+  $mobile-height: 300px;
   .array {
     display: flex;
     overflow-x: scroll;
     height: $height;
     margin-top: calc(50vh - #{$height / 2});
     padding: 0 16px;
+
+    @media only screen and (max-width: 450px) {
+      height: $mobile-height;
+      margin-top: calc(50vh - #{$mobile-height / 2});
+    }
 
     .margin-right:not(:last-child) {
       margin-right: 24px;

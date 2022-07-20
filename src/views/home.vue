@@ -106,12 +106,22 @@
     display: flex;
     justify-content: space-between;
 
+    @media only screen and (max-width: 450px) {
+      height: 100%;
+      flex-direction: column;
+    }
+
     section {
       width: 100%;
       height: 100vh;
       padding: 36px;
       transition: all 0.5s;
       position: relative;
+
+      @media only screen and (max-width: 450px) {
+        width: 100vw;
+        height: 100%;
+      }
 
       .header-group {
         display: inline-flex;

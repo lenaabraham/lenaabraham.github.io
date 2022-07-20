@@ -56,7 +56,7 @@ img.magnet(
 <style scoped lang="scss">
   .magnet {
     position: absolute;
-    width: 500px;
+    width: 36vw;
 
     border: 1px solid white;
 
@@ -67,6 +67,10 @@ img.magnet(
     z-index: 2;
 
     transition: transform 0.3s;
+
+    @media only screen and (max-width: 450px) {
+      display: none;
+    }
   }
   .magnet:hover {
     box-shadow: 3px 5px 6px 0px rgba(0,0,0,0.44);
