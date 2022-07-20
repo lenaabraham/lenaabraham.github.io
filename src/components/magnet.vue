@@ -15,6 +15,10 @@ img.magnet(
         type: String,
         required: true,
       },
+      hor: {
+        type: Number,
+        default: 0,
+      }
     },
 
     data() {
@@ -38,8 +42,8 @@ img.magnet(
 
     mounted() {
       this.rotation = `rotate(${Math.floor(Math.random() * 30) - 15}deg)`;
-      this.top = `${Math.floor(Math.random() * 15) + 35}vh`;
-      this.left = `${Math.floor(Math.random() * 10) + 25}px`;
+      this.top = `${Math.floor(Math.random() * 15) + 30}vh`;
+      this.left = `${Math.floor(Math.random() * 10) + (12 * this.hor)}px`;
     },
 
     methods: {

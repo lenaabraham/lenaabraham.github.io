@@ -10,6 +10,7 @@
       .header(@click="open('/about')") About
       .header(@click="open('/contact')") Contact
     Magnet(
+      :hor="1"
       src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/orange-crush-horizontal-1646080000.jpg"
     )
   section(:style="sectionStyles.styling")
@@ -23,6 +24,7 @@
       .header(@click="open('/styling/sweet')") Sweet
       .header(@click="open('/styling/drinks')") Drinks
     Magnet(
+      :hor="-1"
       src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/fennel-salad-horizontal2-1646080323.jpg"
     )
   section(:style="sectionStyles.recipes")
@@ -36,6 +38,7 @@
       .header(@click="open('/recipes/sweet')") Sweet
       .header(@click="open('/recipes/drinks')") Drinks
     Magnet(
+      :hor="-3"
       src="https://hips.hearstapps.com/hmg-prod/images/strawberry-shortcake-ice-cream-cake-1649267424.jpg"
     )
 </template>
