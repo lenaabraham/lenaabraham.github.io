@@ -1,8 +1,9 @@
-<!-- orange crush, strawberry shortcake, fennel salad -->
 <template lang="pug">
 img.magnet(
   :src="src"
   :style="style"
+  @mouseover="mouseover"
+  @mouseout="mouseout"
 )
 </template>
 
@@ -16,16 +17,37 @@ img.magnet(
       },
     },
 
+    data() {
+      return {
+        translate: null,
+        rotation: null,
+        top: null,
+        left: null,
+      };
+    },
+
     computed: {
       style() {
-        const rotation = Math.floor(Math.random() * 30) - 15;
-        const top = Math.floor(Math.random() * 15) + 35;
-        const left = Math.floor(Math.random() * 10) + 25;
         return {
-          transform: `rotate(${rotation}deg)`,
-          top: `${top}vh`,
-          left: `${left}px`,
+          transform: [this.translate, this.rotation].join(' '),
+          top: this.top,
+          left: this.left,
         }
+      },
+    },
+
+    mounted() {
+      this.rotation = `rotate(${Math.floor(Math.random() * 30) - 15}deg)`;
+      this.top = `${Math.floor(Math.random() * 15) + 35}vh`;
+      this.left = `${Math.floor(Math.random() * 10) + 25}px`;
+    },
+
+    methods: {
+      mouseover() {
+        this.translate = 'translate(-2px, -2px)';
+      },
+      mouseout() {
+        this.translate = null;
       },
     },
   }
@@ -43,5 +65,14 @@ img.magnet(
     -moz-box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.44);
 
     z-index: 2;
+
+    transition: transform 0.3s;
+  }
+  .magnet:hover {
+    box-shadow: 3px 5px 6px 0px rgba(0,0,0,0.44);
+    -webkit-box-shadow: 3px 5px 6px 0px rgba(0,0,0,0.44);
+    -moz-box-shadow: 3px 5px 6px 0px rgba(0,0,0,0.44);
+
+    z-index: 3;
   }
 </style>
