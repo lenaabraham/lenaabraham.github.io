@@ -42,7 +42,7 @@ img.magnet(
 
     mounted() {
       this.rotation = `rotate(${Math.floor(Math.random() * 30) - 15}deg)`;
-      this.top = `${Math.floor(Math.random() * 15) + 30}vh`;
+      this.top = '35vh';
       this.left = `${Math.floor(Math.random() * 10) + (12 * this.hor)}px`;
     },
 
@@ -60,7 +60,7 @@ img.magnet(
 <style scoped lang="scss">
   .magnet {
     position: absolute;
-    width: 36vw;
+    height: 36vh;
 
     border: 1px solid white;
 

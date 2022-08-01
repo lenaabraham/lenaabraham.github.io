@@ -3,8 +3,8 @@
   section(:style="sectionStyles.contact")
     .header-group(
       ref="contact"
-      @mouseover="adjustHeight('contact', 3)"
-      @mouseout="adjustHeight('contact', 1)"
+      @mouseover="adjustHeight('contact', 2)"
+      @mouseout="adjustHeight('contact', 0)"
     )
       .header.primary Lena Abraham
       .header(@click="open('/about')") About
@@ -16,8 +16,8 @@
   section(:style="sectionStyles.styling")
     .header-group(
       ref="styling"
-      @mouseover="adjustHeight('styling', 4)"
-      @mouseout="adjustHeight('styling', 1)"
+      @mouseover="adjustHeight('styling', 3)"
+      @mouseout="adjustHeight('styling', 0)"
     )
       .header.primary Styling
       .header(@click="open('/styling/savory')") Savory
@@ -25,21 +25,21 @@
       .header(@click="open('/styling/drinks')") Drinks
     Magnet(
       :hor="-1"
-      src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/fennel-salad-horizontal2-1646080323.jpg"
+      src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/curried-chick-pea-salad-3-1651248610.jpg"
     )
   section(:style="sectionStyles.recipes")
     .header-group(
       ref="recipes"
-      @mouseover="adjustHeight('recipes', 4)"
-      @mouseout="adjustHeight('recipes', 1)"
+      @mouseover="adjustHeight('recipes', 3)"
+      @mouseout="adjustHeight('recipes', 0)"
     )
       .header.primary Recipes
       .header(@click="open('/recipes/savory')") Savory
       .header(@click="open('/recipes/sweet')") Sweet
       .header(@click="open('/recipes/drinks')") Drinks
     Magnet(
-      :hor="-3"
-      src="https://hips.hearstapps.com/hmg-prod/images/strawberry-shortcake-ice-cream-cake-1649267424.jpg"
+      :hor="-4"
+      src="https://hips.hearstapps.com/hmg-prod/images/banana-pudding-bars-horizontal-1536693077.png"
     )
 </template>
 
@@ -82,16 +82,17 @@
     },
 
     mounted() {
-      ['styling', 'recipes', 'contact'].forEach(group => this.adjustHeight(group, 1));
+      ['styling', 'recipes', 'contact'].forEach(group => this.adjustHeight(group, 0));
     },
 
     methods: {
       adjustHeight(ref, numChildren) {
         if (!this.$refs[ref]) { return; }
-        // textHeight and padding derived from .header class below
-        const textHeight = 36;
+        // ...HeaderHeight and padding derived from .header class below
+        const primaryHeaderHeight = 36;
+        const secondaryHeaderHeight = 24;
         const margin = 12;
-        const totalHeight = (numChildren * textHeight) + ((numChildren - 1) * margin);
+        const totalHeight = primaryHeaderHeight + (numChildren * (secondaryHeaderHeight + margin));
         this.$refs[ref].style.height = `${totalHeight}px`;
       },
 
@@ -131,13 +132,19 @@
         flex-direction: column;
         overflow: hidden;
         transition: all 0.5s;
+        z-index: 1000;
       }
 
       .header {
         cursor: pointer;
         display: inline-block;
-        font-size: 36px;
+        font-size: 24px;
         margin-bottom: 12px;
+        color: #303030;
+      }
+      .header.primary {
+        font-size: 36px;
+        color: black;
       }
       .header:not(.primary):hover {
         color: white;

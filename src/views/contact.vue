@@ -8,25 +8,20 @@ form.contact-form(
     v-model="name"
     type="text"
     name="name"
-    placeholder="Name..."
-  )
-  input.input(
-    type="text"
-    name="company"
-    placeholder="Company... (Optional)"
+    placeholder="name"
   )
   input.input(
     v-model="email"
     type="text"
     name="email"
-    placeholder="Email..."
+    placeholder="email"
   )
   textarea.input.textarea(
     v-model="message"
     :rows="5"
     :cols="30"
     name="message"
-    placeholder="Message..."
+    placeholder="message"
   )
   input.input.button(
     type="submit"
@@ -74,6 +69,9 @@ form.contact-form(
           emailjs.sendForm('service_i3kuprh', 'template_jye1rgf', this.$refs.form, 'JxDhn_2D5kkXHlRwM')
             .then((result) => {
               this.sending = false;
+              this.name = null;
+              this.email = null;
+              this.message = null;
               console.log('SUCCESS!', result.text);
             }, (error) => {
               this.sending = false;
@@ -103,7 +101,7 @@ form.contact-form(
       margin-bottom: $padding;
     }
     .input {
-      font-family: Avenir, Helvetica, Arial, sans-serif;
+      font-family: 'Pirata One', cursive;
       font-size: 24px;
     }
     .input:focus {

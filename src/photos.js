@@ -4,32 +4,36 @@ export default {
       styling: {
         savory: [
           {
-            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/211118-delish-seo-rosti-horizontal-338-eb-min-1637617097.jpg",
-            link: "https://www.delish.com/cooking/menus/a38324426/rosti-recipe/",
-          },
-          {
-            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/bbq-tofu1-1654707395.jpg",
-            link: "https://www.delish.com/cooking/recipe-ideas/a40087844/bbq-tofu-recipe/",
+            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gyro-sandwich1-1650490757.jpg",
+            link: "https://www.delish.com/cooking/recipe-ideas/a39608416/gyro-sandwich-recipe/",
           },
           {
             image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spanakopitastuffedshells1-1641939118.jpg",
             link: "https://www.delish.com/cooking/recipe-ideas/a38688085/spanakopita-stuffed-shells-recipe/",
           },
           {
-            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pasta-al-limone-1-1639613338.jpg",
-            link: "https://www.delish.com/cooking/recipe-ideas/a38235483/pasta-al-limone-recipe/",
+            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/curried-chick-pea-salad-3-1651248610.jpg",
+            link: "https://www.delish.com/cooking/recipe-ideas/a39751192/curried-chickpea-salad-recipe/",
           },
           {
             image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/papaya-salad-5-1651163399.jpg",
             link: "https://www.delish.com/cooking/recipe-ideas/a39629712/green-papaya-salad-recipe/",
           },
           {
-            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mac-and-cheese-stuffed-zucchini-1651538489.jpg",
-            link: "https://www.delish.com/cooking/recipe-ideas/a39464505/mac-and-cheese-stuffed-zucchini-recipe/",
+            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/bbq-tofu1-1654707395.jpg",
+            link: "https://www.delish.com/cooking/recipe-ideas/a40087844/bbq-tofu-recipe/",
           },
           {
-            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/striped-bass1-1651153277.jpg",
-            link: "https://www.delish.com/cooking/recipe-ideas/a39701690/striped-bass-recipe/",
+            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/211118-delish-seo-rosti-horizontal-338-eb-min-1637617097.jpg",
+            link: "https://www.delish.com/cooking/menus/a38324426/rosti-recipe/",
+          },
+          {
+            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pasta-al-limone-1-1639613338.jpg",
+            link: "https://www.delish.com/cooking/recipe-ideas/a38235483/pasta-al-limone-recipe/",
+          },
+          {
+            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mac-and-cheese-stuffed-zucchini-1651538489.jpg",
+            link: "https://www.delish.com/cooking/recipe-ideas/a39464505/mac-and-cheese-stuffed-zucchini-recipe/",
           },
           {
             image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/220315-delish-seo-jalapeno-citrus-salmon-horizontal-v1-0105-eb-1648070235.jpg",
@@ -40,16 +44,16 @@ export default {
             link: "https://www.delish.com/cooking/recipe-ideas/a38453029/pasta-alla-gricia-recipe/",
           },
           {
-            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/curried-chick-pea-salad-3-1651248610.jpg",
-            link: "https://www.delish.com/cooking/recipe-ideas/a39751192/curried-chickpea-salad-recipe/",
-          },
-          {
             image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/smoked-corn-on-the-cob1-1650546919.jpg",
             link: "https://www.delish.com/cooking/recipe-ideas/a39701658/smoked-corn-on-the-cob-recipe/",
           },
           {
             image: "https://hips.hearstapps.com/hmg-prod/images/fried-fish-taco5-1650561193.jpg",
             link: "https://www.delish.com/cooking/recipe-ideas/a34099701/fried-fish-tacos-recipe/",
+          },
+          {
+            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/striped-bass1-1651153277.jpg",
+            link: "https://www.delish.com/cooking/recipe-ideas/a39701690/striped-bass-recipe/",
           },
           {
             image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/crunchsalad-3-1647470001.jpg",
@@ -78,10 +82,6 @@ export default {
           {
             image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/fennel-salad-horizontal2-1646080323.jpg",
             link: "https://www.delish.com/cooking/recipe-ideas/a38984280/fennel-salad-recipe/",
-          },
-          {
-            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gyro-sandwich1-1650490757.jpg",
-            link: "https://www.delish.com/cooking/recipe-ideas/a39608416/gyro-sandwich-recipe/",
           },
           {
             image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/miso-marinated-chilean-sea-bass1-1650488754.jpg",
