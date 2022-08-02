@@ -34,12 +34,13 @@ export default {
 
   methods: {
     linearGradient(colors) {
+      const isMobile = window.screen.width <= 450;
       const gradientColorPhrases =['left', 'right'].map((side) => {
         const rgbObj = colors[side];
         const rgbVals = [rgbObj['r'], rgbObj['g'], rgbObj['b']];
         return `rgb(${rgbVals.join(', ')})`;
       });
-      return `linear-gradient(to right, ${gradientColorPhrases.join(', ')})`;
+      return `linear-gradient(to ${isMobile ? 'bottom' : 'right'}, ${gradientColorPhrases.join(', ')})`;
     },
   },
 }
