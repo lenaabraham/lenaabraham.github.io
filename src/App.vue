@@ -1,11 +1,15 @@
 <template lang="pug">
+Toast
 router-view(v-slot="{ Component, route }")
   transition(:name="route.meta.transition || 'fade'")
     component(:is="Component")
 </template>
 
 <script>
+  import Toast from '@/components/toast.vue';
+
   export default {
+    components: { Toast },
   }
 </script>
 

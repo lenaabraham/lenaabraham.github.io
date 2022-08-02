@@ -1,34 +1,37 @@
 <template lang="pug">
-HomeButton
-form.contact-form(
-  ref="form"
-  @submit.prevent="sendEmail"
-)
-  input.input(
-    v-model="name"
-    type="text"
-    name="name"
-    placeholder="name"
+div
+  HomeButton
+  form.contact-form(
+    ref="form"
+    @submit.prevent="sendEmail"
+    :style="formColors"
   )
-  input.input(
-    v-model="email"
-    type="text"
-    name="email"
-    placeholder="email"
-  )
-  textarea.input.textarea(
-    v-model="message"
-    :rows="5"
-    :cols="30"
-    name="message"
-    placeholder="message"
-  )
-  input.input.button(
-    type="submit"
-    value="Send"
-    :disabled="disabled"
-    :class="{ disabled }"
-  )
+    text.header Get in touch!
+    input.input(
+      v-model="name"
+      type="text"
+      name="name"
+      placeholder="name"
+    )
+    input.input(
+      v-model="email"
+      type="text"
+      name="email"
+      placeholder="email"
+    )
+    textarea.input.textarea(
+      v-model="message"
+      :rows="5"
+      :cols="30"
+      name="message"
+      placeholder="message"
+    )
+    input.input.button(
+      type="submit"
+      value="Send"
+      :disabled="disabled"
+      :class="{ disabled }"
+    )
 </template>
 
 <script>
@@ -53,6 +56,14 @@ form.contact-form(
     },
 
     computed: {
+      formColors() {
+        const colors = {
+          left: this.colors.contact.right,
+          right: this.colors.contact.left,
+        };
+        return { 'background-image': this.linearGradient(colors) };
+      },
+
       disabled() {
         return this.sending || !this.name || !this.email || !this.message;
       },
@@ -66,18 +77,25 @@ form.contact-form(
     methods: {
       sendEmail() {
         if (!this.sending) {
+          this.sending = true;
           emailjs.sendForm('service_i3kuprh', 'template_jye1rgf', this.$refs.form, 'JxDhn_2D5kkXHlRwM')
             .then((result) => {
-              this.sending = false;
-              this.name = null;
-              this.email = null;
-              this.message = null;
+              this.clearForm()
+              this.$store.dispatch('toast', 'Message sent!');
               console.log('SUCCESS!', result.text);
             }, (error) => {
-              this.sending = false;
+              this.clearForm()
+              this.$store.dispatch('toast', 'Something went wrong...');
               console.log('FAILED...', error.text);
             });
         }
+      },
+
+      clearForm() {
+        this.sending = false;
+        this.name = null;
+        this.email = null;
+        this.message = null;
       },
     },
   }
@@ -86,12 +104,16 @@ form.contact-form(
 <style scoped lang="scss">
   $padding: 16px;
   .contact-form {
+    .header {
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
     margin: 32px;
     display: flex;
     flex-direction: column;
 
     padding: $padding;
-    background-color: #accde6;
+    // background-color: #accde6;
     width: 1000px;
 
     border: 1px solid #878787;
