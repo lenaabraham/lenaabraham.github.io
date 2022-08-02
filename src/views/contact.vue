@@ -4,7 +4,6 @@ div
   form.contact-form(
     ref="form"
     @submit.prevent="sendEmail"
-    :style="formColors"
   )
     text.header Get in touch!
     input.input(
@@ -56,14 +55,6 @@ div
     },
 
     computed: {
-      formColors() {
-        const colors = {
-          left: this.colors.contact.right,
-          right: this.colors.contact.left,
-        };
-        return { 'background-image': this.linearGradient(colors) };
-      },
-
       disabled() {
         return this.sending || !this.name || !this.email || !this.message;
       },
@@ -113,11 +104,7 @@ div
     flex-direction: column;
 
     padding: $padding;
-    // background-color: #accde6;
     width: 1000px;
-
-    border: 1px solid #878787;
-    border-radius: $padding / 2;
 
     .input:not(:last-child) {
       margin-bottom: $padding;
@@ -125,6 +112,8 @@ div
     .input {
       font-family: 'Pirata One', cursive;
       font-size: 24px;
+      border: 0px;
+      background: rgba(255,255,255,0.4);
     }
     .input:focus {
       outline: none;
@@ -132,8 +121,12 @@ div
     .textarea {
       resize: none;
     }
+    .button.disabled {
+      background: rgba(255,255,255,0.2);
+    }
     .button:not(.disabled) {
       cursor: pointer;
+      background: rgba(255,255,255,0.8);
     }
   }
 </style>
