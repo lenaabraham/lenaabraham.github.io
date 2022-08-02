@@ -98,9 +98,14 @@
       },
 
       open(path) {
-        const group = ['styling', 'recipes', 'contact'].find(group => path.includes(group));
-        this[`${group}Open`] = true;
-        this.$router.push(path);
+        if (window.screen.width <= 450) {
+          // 450 is the app-wide designation for mobile and the animations look weird on mobile.
+          this.$router.push(path);
+        } else {
+          const group = ['styling', 'recipes', 'contact'].find(group => path.includes(group));
+          this[`${group}Open`] = true;
+          this.$router.push(path);
+        }
       },
     },
   }
