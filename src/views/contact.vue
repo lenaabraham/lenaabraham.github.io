@@ -110,7 +110,7 @@ div
       margin-bottom: $padding;
     }
     .input {
-      font-family: 'Pirata One', cursive;
+      font-family: 'MuseoModerno', cursive;
       font-size: 24px;
       border: 0px;
       background: rgba(255,255,255,0.4);

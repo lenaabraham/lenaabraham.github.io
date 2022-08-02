@@ -6,7 +6,7 @@
       @mouseover="adjustHeight('contact', 1)"
       @mouseout="adjustHeight('contact', 0)"
     )
-      .header.primary Lena Abraham
+      .header.primary.xl Lena Abraham
       //- .header(@click="open('/about')") About
       .header(@click="open('/contact')") Contact
     Magnet(
@@ -92,7 +92,8 @@
         const primaryHeaderHeight = 36;
         const secondaryHeaderHeight = 24;
         const margin = 12;
-        const totalHeight = primaryHeaderHeight + (numChildren * (secondaryHeaderHeight + margin));
+        const hangerOnHeight = 12;
+        const totalHeight = primaryHeaderHeight + hangerOnHeight + (numChildren * (secondaryHeaderHeight + hangerOnHeight + margin));
         this.$refs[ref].style.height = `${totalHeight}px`;
       },
 
@@ -145,6 +146,10 @@
       .header.primary {
         font-size: 36px;
         color: black;
+      }
+      .header.primary.xl {
+        font-weight: 700;
+        font-size: 40px;
       }
       .header:not(.primary):hover {
         color: white;
