@@ -101,7 +101,7 @@
     overflow-x: scroll;
     height: $height;
     margin-top: calc(50vh - #{$height / 2});
-    padding: 0 16px;
+    padding: 16px;
 
     @media only screen and (max-width: 450px) {
       height: $mobile-height;

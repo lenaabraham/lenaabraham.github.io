@@ -2,7 +2,7 @@ export default {
   data() {
     return {
       colors: {
-        // Lena's experiment (snake variety)
+        // Snake Variety
         contact: {
           left: { r: 187, g: 223, b: 197 },
           right: { r: 186, g: 183, b: 0 },

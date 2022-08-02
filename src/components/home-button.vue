@@ -2,7 +2,7 @@
 router-link.back-button(
   to="/"
   :style="style"
-) home
+) Home
 </template>
 
 <script>
