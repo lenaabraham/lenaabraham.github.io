@@ -39,7 +39,7 @@
       .header(@click="open('/recipes/drinks')") Drinks
     Magnet(
       :hor="-4"
-      src="https://hips.hearstapps.com/hmg-prod/images/banana-pudding-bars-horizontal-1536693077.png"
+      src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-210915-cranberry-pie-007-ab-1632768669.jpg"
     )
 </template>
 
