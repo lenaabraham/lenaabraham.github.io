@@ -147,6 +147,8 @@
         font-size: 24px;
         margin-bottom: 12px;
         color: #303030;
+        white-space: nowrap;
+        text-overflow: ellipsis;
       }
       .header.primary {
         font-size: 36px;
