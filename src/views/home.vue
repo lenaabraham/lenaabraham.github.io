@@ -3,11 +3,11 @@
   section(:style="sectionStyles.contact")
     .header-group(
       ref="contact"
-      @mouseover="adjustHeight('contact', 2)"
+      @mouseover="adjustHeight('contact', 1)"
       @mouseout="adjustHeight('contact', 0)"
     )
       .header.primary Lena Abraham
-      .header(@click="open('/about')") About
+      //- .header(@click="open('/about')") About
       .header(@click="open('/contact')") Contact
     Magnet(
       :hor="1"
