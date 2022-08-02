@@ -60,7 +60,7 @@ img.magnet(
 <style scoped lang="scss">
   .magnet {
     position: absolute;
-    height: 36vh;
+    height: 42vh;
 
     border: 1px solid white;
 
