@@ -106,6 +106,10 @@ div
     padding: $padding;
     width: 1000px;
 
+    @media only screen and (max-width: 450px) {
+      width: 60vw;
+    }
+
     .input:not(:last-child) {
       margin-bottom: $padding;
     }
