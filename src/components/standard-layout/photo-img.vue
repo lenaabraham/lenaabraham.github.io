@@ -1,21 +1,43 @@
 <template lang="pug">
-.container
+.container(:style="size")
   a(
     :href="photo.link"
     target="_blank"
   )
     img.img(
+      ref="img"
       :src="photo.image"
     )
 </template>
 
 <script>
   export default {
+    data() {
+      return {
+        width: null,
+      };
+    },
+
     props: {
       photo: {
         type: Object,
         required: true,
       },
+    },
+
+    computed: {
+      size() {
+        // There was some weirdness with sizing on mobile, hoping this fixes it
+        if (this.width) {
+          return { 'width': `${this.width}px` };
+        } else {
+          return {};
+        }
+      }
+    },
+
+    mounted() {
+      this.width = Math.floor(this.$refs.img.getBoundingClientRect().width);
     },
   }
 </script>
