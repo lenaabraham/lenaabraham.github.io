@@ -18,6 +18,8 @@
 
 <style scoped lang="scss">
   .toast {
+    z-index: 1000;
+
     width: 400px;
     height: 60px;
     border: 2px solid white;
