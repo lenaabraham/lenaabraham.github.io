@@ -1,5 +1,5 @@
 <template lang="pug">
-.container(:style="size")
+.container(:style="{ width: `${width}px`}")
   a(
     :href="photo.link"
     target="_blank"
@@ -7,6 +7,7 @@
     img.img(
       ref="img"
       :src="photo.image"
+      @load="onImageLoad"
     )
 </template>
 
@@ -14,7 +15,7 @@
   export default {
     data() {
       return {
-        width: null,
+        width: 0,
       };
     },
 
@@ -25,19 +26,10 @@
       },
     },
 
-    computed: {
-      size() {
-        // There was some weirdness with sizing on mobile, hoping this fixes it
-        if (this.width) {
-          return { 'width': `${this.width}px` };
-        } else {
-          return {};
-        }
-      }
-    },
-
-    mounted() {
-      this.width = Math.floor(this.$refs.img.getBoundingClientRect().width);
+    methods: {
+      onImageLoad() {
+        this.width = this.$refs.img.getBoundingClientRect().width;
+      },
     },
   }
 </script>
