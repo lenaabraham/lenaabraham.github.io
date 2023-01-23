@@ -7,8 +7,7 @@
       @mouseout="adjustHeight('contact', 0)"
     )
       .header.primary.xl Lena Abraham
-      //- .header(@click="open('/about')") About
-      .header(@click="open('/contact')") Contact
+      .header(@click="open('/contact')") About / Contact
     Magnet(
       :hor="1"
       src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/orange-crush-horizontal-1646080000.jpg"
@@ -99,7 +98,7 @@
 
       open(path) {
         if (window.screen.width <= 450) {
-          // 450 is the app-wide designation for mobile and the animations look weird on mobile.
+          // 450 is my app-wide designation for mobile and the animations look weird on mobile.
           this.$router.push(path);
         } else {
           const group = ['styling', 'recipes', 'contact'].find(group => path.includes(group));
