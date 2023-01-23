@@ -15,7 +15,7 @@ router-view(v-slot="{ Component, route }")
 
 <style>
   #app {
-    font-family: 'MuseoModerno', cursive;
+    font-family: 'Pirata One', cursive;
     font-size: 32px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
