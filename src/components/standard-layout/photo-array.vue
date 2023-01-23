@@ -108,6 +108,11 @@
       margin-top: calc(50vh - #{$mobile-height / 2});
     }
 
+    @media only screen and (max-height: ($height + 100px)) {
+      height: $height / 2;
+      margin-top: calc(50vh - #{$height / 4});
+    }
+
     .margin-right:not(:last-child) {
       margin-right: 24px;
     }
