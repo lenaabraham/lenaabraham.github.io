@@ -37,7 +37,7 @@ div
         :src="aboutImgSrc"
         alt="photo of Lena Abraham"
       )
-      text.about-text Lena Abraham is a recipe developer and food stylist working in New York City. Raised on a vegetable farm, she's been working in the food industry in some capacity for basically forever. She still loves food though, and eats it every day. 🙂
+      text.about-text Lena Abraham is a recipe developer and food stylist, living and working in New York City since 2010. She'd love to work with you next! 🙂
 </template>
 
 <script>
@@ -177,6 +177,11 @@ div
       width: 40%;
       margin-right: 16px;
       align-self: flex-start;
+
+      box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.41);
+      -webkit-box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.41);
+      -moz-box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.41);
+
       @media only screen and (max-width: $width-breakpoint) {
         width: 60%;
         margin-right: 0;
