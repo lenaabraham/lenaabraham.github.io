@@ -4,6 +4,10 @@ export default {
       styling: {
         savory: [
           {
+            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/fennel-salad-horizontal2-1646080323.jpg",
+            link: "https://www.delish.com/cooking/recipe-ideas/a38984280/fennel-salad-recipe/",
+          },
+          {
             image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gyro-sandwich1-1650490757.jpg",
             link: "https://www.delish.com/cooking/recipe-ideas/a39608416/gyro-sandwich-recipe/",
           },
@@ -18,10 +22,6 @@ export default {
           {
             image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/papaya-salad-5-1651163399.jpg",
             link: "https://www.delish.com/cooking/recipe-ideas/a39629712/green-papaya-salad-recipe/",
-          },
-          {
-            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/bbq-tofu1-1654707395.jpg",
-            link: "https://www.delish.com/cooking/recipe-ideas/a40087844/bbq-tofu-recipe/",
           },
           {
             image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/211118-delish-seo-rosti-horizontal-338-eb-min-1637617097.jpg",
@@ -48,10 +48,6 @@ export default {
             link: "https://www.delish.com/cooking/recipe-ideas/a38453029/pasta-alla-gricia-recipe/",
           },
           {
-            image: "https://hips.hearstapps.com/hmg-prod/images/fried-fish-taco5-1650561193.jpg",
-            link: "https://www.delish.com/cooking/recipe-ideas/a34099701/fried-fish-tacos-recipe/",
-          },
-          {
             image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/striped-bass1-1651153277.jpg",
             link: "https://www.delish.com/cooking/recipe-ideas/a39701690/striped-bass-recipe/",
           },
@@ -62,10 +58,6 @@ export default {
           {
             image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/onepantunapasta-2-1647470060.jpg",
             link: "https://www.delish.com/cooking/recipe-ideas/a39212203/one-pan-tuna-pasta-recipe/",
-          },
-          {
-            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-080521-khao-soi-03-landscape-jg-1629488346.jpg",
-            link: "https://www.delish.com/cooking/recipe-ideas/a37264689/khao-soi-recipe/",
           },
           {
             image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-220210-tofu-lettuce-wraps-001-ab-web-1646079642.jpg",
@@ -80,10 +72,6 @@ export default {
             link: "https://www.delish.com/cooking/a39355382/vegetarian-matzo-ball-soup-recipe/",
           },
           {
-            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/fennel-salad-horizontal2-1646080323.jpg",
-            link: "https://www.delish.com/cooking/recipe-ideas/a38984280/fennel-salad-recipe/",
-          },
-          {
             image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/miso-marinated-chilean-sea-bass1-1650488754.jpg",
             link: "https://www.delish.com/cooking/recipe-ideas/a39569919/baked-chilean-sea-bass-recipe/",
           },
@@ -94,6 +82,18 @@ export default {
           {
             image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/211104-delish-seo-esquites-fritters-horizontal-0243-eb-1636752242.jpg",
             link: "https://www.delish.com/cooking/a38176573/esquites-fritters-recipe/",
+          },
+          {
+            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/bbq-tofu1-1654707395.jpg",
+            link: "https://www.delish.com/cooking/recipe-ideas/a40087844/bbq-tofu-recipe/",
+          },
+          {
+            image: "https://hips.hearstapps.com/hmg-prod/images/fried-fish-taco5-1650561193.jpg",
+            link: "https://www.delish.com/cooking/recipe-ideas/a34099701/fried-fish-tacos-recipe/",
+          },
+          {
+            image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-080521-khao-soi-03-landscape-jg-1629488346.jpg",
+            link: "https://www.delish.com/cooking/recipe-ideas/a37264689/khao-soi-recipe/",
           },
         ],
         sweet: [

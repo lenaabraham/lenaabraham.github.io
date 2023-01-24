@@ -10,7 +10,7 @@
       .header(@click="open('/contact')") About / Contact
     Magnet(
       :hor="1"
-      src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/orange-crush-horizontal-1646080000.jpg"
+      src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/rumrunner-1-1647469915.jpg"
     )
   section(:style="sectionStyles.styling")
     .header-group(
@@ -24,7 +24,7 @@
       .header(@click="open('/styling/drinks')") Drinks
     Magnet(
       :hor="-1"
-      src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/curried-chick-pea-salad-3-1651248610.jpg"
+      src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spanakopitastuffedshells1-1641939118.jpg"
     )
   section(:style="sectionStyles.recipes")
     .header-group(
@@ -38,7 +38,7 @@
       .header(@click="open('/recipes/drinks')") Drinks
     Magnet(
       :hor="-4"
-      src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-210915-cranberry-pie-007-ab-1632768669.jpg"
+      src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-091621-apple-crumb-pie-06-jg-1632846995.jpg"
     )
 </template>
 
