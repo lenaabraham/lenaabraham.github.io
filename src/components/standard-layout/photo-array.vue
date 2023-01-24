@@ -95,6 +95,7 @@
 
 <style scoped lang="scss">
   $height: 600px;
+  $short-height: $height * 0.75;
   $mobile-height: 300px;
   .array {
     display: flex;
@@ -109,8 +110,8 @@
     }
 
     @media only screen and (max-height: ($height + 100px)) {
-      height: $height / 2;
-      margin-top: calc(50vh - #{$height / 4});
+      height: $short-height;
+      margin-top: calc(50vh - #{$short-height / 2});
     }
 
     .margin-right:not(:last-child) {
