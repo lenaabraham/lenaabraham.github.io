@@ -1,12 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/home.vue'
-import SavoryStyling from '../views/styling/savory.vue'
-import SweetStyling from '../views/styling/sweet.vue'
-import DrinksStyling from '../views/styling/drinks.vue'
-import SavoryRecipes from '../views/recipes/savory.vue'
-import SweetRecipes from '../views/recipes/sweet.vue'
-import DrinksRecipes from '../views/recipes/drinks.vue'
-import Contact from '../views/contact.vue'
+import PhotoView from '../views/photo-view.vue'
+import AboutContact from '../views/about-contact.vue'
 
 const routes = [
   {
@@ -16,45 +11,23 @@ const routes = [
     meta: { transition: 'fade-menu' },
   },
   {
-    path: '/styling/savory',
-    name: 'styling-savory',
-    component: SavoryStyling,
+    path: '/styling',
+    name: 'styling',
+    component: PhotoView,
     meta: { transition: 'fade' },
+    props: { photoType: 'styling' }
   },
   {
-    path: '/styling/sweet',
-    name: 'styling-sweet',
-    component: SweetStyling,
+    path: '/recipes',
+    name: 'recipes',
+    component: PhotoView,
     meta: { transition: 'fade' },
+    props: { photoType: 'recipes' }
   },
   {
-    path: '/styling/drinks',
-    name: 'styling-drinks',
-    component: DrinksStyling,
-    meta: { transition: 'fade' },
-  },
-  {
-    path: '/recipes/savory',
-    name: 'recipes-savory',
-    component: SavoryRecipes,
-    meta: { transition: 'fade' },
-  },
-  {
-    path: '/recipes/sweet',
-    name: 'recipes-sweet',
-    component: SweetRecipes,
-    meta: { transition: 'fade' },
-  },
-  {
-    path: '/recipes/drinks',
-    name: 'recipes-drinks',
-    component: DrinksRecipes,
-    meta: { transition: 'fade' },
-  },
-  {
-    path: '/contact',
-    name: 'contact',
-    component: Contact,
+    path: '/about',
+    name: 'about-contact',
+    component: AboutContact,
     meta: { transition: 'fade' },
   },
 ]

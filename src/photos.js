@@ -1,3 +1,4 @@
+// Deprecated. See src/lib/photos.js
 export default {
   data() {
     return {
